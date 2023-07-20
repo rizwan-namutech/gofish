@@ -11,8 +11,8 @@ import (
 	"github.com/stmcginnis/gofish/common"
 )
 
-// ServiceCapabilities The supported capabilities of this job service implementation
-type ServiceCapabilities struct {
+// JobServiceCapabilities The supported capabilities of this job service implementation
+type JobServiceCapabilities struct {
 	// MaxJobs This property shall contain the maximum number of jobs supported by the implementation.
 	MaxJobs int
 	// MaxSteps This property shall contain the maximum number of steps supported by a single job instance.
@@ -40,7 +40,7 @@ type JobService struct {
 	log string
 
 	// ServiceCapabilities This type shall contain properties that describe the capabilities or supported features of this implementation of a job service.
-	ServiceCapabilities ServiceCapabilities
+	ServiceCapabilities JobServiceCapabilities
 
 	// ServiceEnabled indicates whether this service isenabled.
 	ServiceEnabled bool
